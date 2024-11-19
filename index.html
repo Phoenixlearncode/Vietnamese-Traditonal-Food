@@ -8,13 +8,14 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <link rel="stylesheet" href="tablet.css">
-  <!-- <link rel="stylesheet" href="mobile.css"> -->
-
+  <link rel="stylesheet" href="mobile.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
   <header>
     <div class="logo">
+      <img src="img\Icon.png" alt="chỗ này là cái icon" class="menu-icon">
       <img src="img\logo3.png" alt="Bún Mắm Vui Vẻ" class="main-logo">
 
       <nav class="nav">
@@ -27,13 +28,19 @@
           <li><img src="img\search.png" class="search" /></li>
         </ul>
       </nav>
+      <div class="search-container">
+        <input type="text" class="search-input" placeholder="Tìm kiếm..." />
+        <button class="search-button">
+          <img src="img\magnifying-glass-solid.svg" alt="Tìm kiếm" />
+        </button>
+      </div>
     </div>
-    <div class="search-container">
+    <!-- <div class="search-container">
       <input type="text" class="search-input" placeholder="Tìm kiếm..." />
       <button class="search-button">
         <img src="img\magnifying-glass-solid.svg" alt="Tìm kiếm" />
       </button>
-    </div>
+    </div> -->
   </header>
   <div class="big">  
     <div class="small">
@@ -68,40 +75,52 @@
             <thead>
               <tr>
                 <th class="product-title" >Sản phẩm</th>
-                <th class="product-title">Giá</th>
-                <th class="product-title">Số lượng</th>
-                <th class="product-title">Tạm tính</th>
+                <th class="product-title1">Giá</th>
+                <th class="product-title2">Số lượng</th>
+                <th class="product-title3">Tạm tính</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td class="product"><img src="img\image 7.png" alt="">Bún đậu Hà Nội</td>
-                <td>35.000</td>
+                <td class="product">
+                  <img src="img\image 7.png" alt="" class="product-img">
+                  <div>
+                    <p>Bún đậu Hà Nội</p>
+                    <p>1 x 35.000</p>
+                  </div>
+                </td>
+                <td class="total-price">35.000</td>
                 <td class="count">
                   <button class="quantity-btn"><img src="img\Minus.png" alt="Chừ"></button>
                   <p class="quantity-btn">1</p>
                   <button class="quantity-btn"><img src="img\Plus.png" alt="Kộng"></button>
-                <td class="total-price">35.000</td>
+                <td >35.000</td>
               </tr>
               <tr>
-                <td class="product"><img src="img\image 6.png" alt="ảnh bún đậu"> Bún đậu Hà Nội (đặc biệt)</td>
-                <td>45.000</td>
+                <td class="product"><img src="img\image 6.png" alt="ảnh bún đậu" class="product-img"> <div>
+                  <p>Bún đậu Hà Nội(Đặc biệt)</p>
+                  <p>2 x 45.000</p>
+                </div></td>
+                <td class="total-price">45.000</td>
                 <td class="count">
                   <button class="quantity-btn"><img src="img\Minus.png" alt="Chừ"></button>
                   <p class="quantity-btn">2</p>
                   <button class="quantity-btn"><img src="img\Plus.png" alt="Kộng"></button>
                 </td>
-                <td class="total-price">90.000</td>
+                <td>90.000</td>
               </tr>
               <tr>
-                <td class="product"><img src="img\image 9.png" alt=""> Bún đậu chả cốm</td>
-                <td>35.000</td>
+                <td class="product"><img src="img\image 9.png" alt="" class="product-img"> <div>
+                  <p>Bún đậu chả cốm</p>
+                  <p>1 x 35.000</p>
+                </div></td>
+                <td class="total-price">35.000</td>
                 <td class="count">
                   <button class="quantity-btn"><img src="img\Minus.png" alt="Chừ"></button>
                   <p class="quantity-btn">1</p>
                   <button class="quantity-btn"><img src="img\Plus.png" alt="Kộng"></button>
                 </td>
-                <td class="total-price">35.000</td>
+                <td >35.000</td>
               </tr>
             </tbody>
           </table>
@@ -139,7 +158,7 @@
 
 
   <footer>
-    <div>
+    <div class="address">
       <p class="footer-title">BÚN MẮM VUI VẺ</p>
       <p class="footer">Địa chỉ: Kiệt 42 - HH02-2C</p>
       <p class="footer">Thanh Hà Thanh Oai, Hà Nội</p>
@@ -149,7 +168,7 @@
       <p class="footer">Giới thiệu</p>
       <p class="footer">Chính sách bảo mật</p>
     </div>
-    <div>
+    <div class="contact">
       <p class="footer-title">LIÊN HỆ</p>
       <p class="footer">Hotline: 0966582108</p>
       <p class="footer">Email: vuabundau@gmail.com</p>

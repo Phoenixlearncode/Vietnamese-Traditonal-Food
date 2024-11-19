@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
 }
 
 
@@ -22,6 +23,9 @@ header {
   align-items: center;
   /* padding-left: 5vw; */
 }
+img.menu-icon{
+  display: none;
+}
 div.logo {
   display: flex;
   justify-content: flex-start;
@@ -30,7 +34,7 @@ div.logo {
 
 .logo img {
   height: 6.5vw;
-  margin: 0 3.4vw;
+  margin: 0 57px;
 }
 img.search{
   display: none;
@@ -83,7 +87,7 @@ div.search-container {
   width: 22.5vw;
   height: 44px;
   position: relative;
-  margin-right: 12vw;
+  margin-right: 220px;
 }
 .search-input {
   flex: 1;
@@ -113,6 +117,8 @@ div.search-container {
 .search-button img {
   width: 20px;
   height: 20px;
+  padding: 0;
+  margin: 0;
 }
 
 .contact-info {
@@ -121,24 +127,27 @@ div.search-container {
 
 .infor-container {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: flex-start;
   width: 100%;
-  padding: 46px;
+  padding: 56px 308px 66px 308px;
 }
 .in4 {
-  padding: 10px;
+  /* padding: 10px; */
+  /* margin-left: 258px; */
   display: flex;
-  justify-content: center;
+
   align-items: flex-end;
-  width: 25vw;
+  height: 56px;
+  line-height: 28px;
 }
 
 .phone {
-  margin-right: 20px;
+  margin-right: 18px;
   width: 63px;
   align-items: baseline;
   flex-direction: row-reverse;
+  height: 56px;
 }
 
 .title-container {
@@ -157,7 +166,7 @@ div.search-container {
 h2.title{
   font-size: 2.1vw;
   font-weight: normal;
-  padding: 10px 20px;
+  padding: 0px 20px;
   color: rgba(0, 0, 0, 0.3);
 }
 h2.title:first-child {
@@ -169,21 +178,23 @@ main {
 }
 
 .table-container {
-  padding: 65px;
+  padding: 89px 202px 0px 202px;
   display: flex;
   justify-content: flex-start;
+  gap: 130px;
 }
 
 table {
-  /* border-collapse: collapse; */
+  border-collapse: collapse;
   margin-bottom: 20px;
   margin-left: 10%;
 }
 
+
 th,
 td {
   padding: 10px 0;
-  text-align: left;
+  text-align: center;
   background-color: white;
   border-bottom: 1px solid #ddd;
 }
@@ -194,11 +205,13 @@ td {
 th.product-title{
   font-weight: normal;
   background-color: white;
+  text-align: left;
 }
 td.product {
   display: flex;
   align-items: center;
   gap: 30px;
+  padding: 10px;
 }
 
 th {
@@ -206,35 +219,72 @@ th {
 }
 
 div.table-a {
-  padding: 10px;
-  width: 60%;
+  /* padding-left: 137px; */
+  width: 772px;
   font-size: 2vw;
   font-weight: regular;
+  /* margin-right: 124px; */
+}
+tr{
+  border-bottom: 2px solid black;
 }
 
 .table-1 {
   width: 100%;
   font-size: 24px;
   font-weight: regular;
+  padding: 0px;
+  margin: 0px;
 }
+th.product-title1 {
+  font-weight: normal;
+  background-color: white;
 
+}
+th.product-title2 {
+  font-weight: normal;
+  background-color: white;
+
+}
+th.product-title3 {
+  font-weight: normal;
+  background-color: white;
+
+}
 tbody {
   font-size: 20px;
   font-weight: regular;
 }
-
+td.product p:last-child{
+  display: none;
+}
 div.table-b {
-  padding-left: 10vw;
-  width: 30%;
+  /* padding-left: 10vw; */
+ 
+  width: 442px;
   font-size: 24px;
-  font-weight: regular;
+  font-weight: normal;
 }
 
 .table-2 {
   width: 100%;
-  height: 100px;
+  font-size: 24px;
+  font-weight: regular;
+  padding: 0px;
+  margin: 0px;
 }
-
+.table-2 tr{
+  height: 51px;
+}
+.table-2 tr:first-child{
+  height: 63px;
+}
+.table-2 td.text-price{
+  text-align: left;
+}
+.table-2 th, td{
+  padding: 0px;
+}
 .price {
   text-align: right;
 }
@@ -250,23 +300,24 @@ div.table-b {
   background-color: white;
   padding: 0.8vw;
 }
-
+.count{
+  padding-top: 0;
+  padding-bottom: 20px;
+}
 .total-price {
-  text-align: left;
+  text-align: center;
   font-weight: regular;
 }
 
 button.checkout-btn {
-
   height: 48px;
   background-color: #4d7d36;
-  font-size: 20px;
+  font-size: 18px;
   color: #fff;
   border: none;
-  padding: 10px 20px;
   cursor: pointer;
-  width: 13vw;
-  margin: 40px 30% 0 30%;
+  width: 221px;
+  margin: 54px 25%;
   border-radius: 8px;
   text-align: center;
 }
@@ -274,27 +325,27 @@ button.checkout-btn {
 .backpage-btn {
   background-color: #4d7d36;
   color: #fff;
-  font-size: 20px;
+  font-size: 18px;
   border: none;
-  padding: 10px 20px;
-  cursor: pointer;
-  width: 13vw;
+  width: 221px;
   height: 48px;
-  margin: 52px 50%;
   border-radius: 8px;
-  text-align: center;
+  margin: 60px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 60px;
 }
 
 
 footer {
-
   background-color: #4d7d36;
-  height: 150px;
+  height: 167px;
   font-size: 20px;
   font-weight: regular;
   width: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   color: white;
 }
@@ -304,9 +355,16 @@ p.footer-title {
   font-size: 24px;
   font-weight: regular;
 }
-
-p.footer {
-
-  padding-top: 15px;
-  font-weight: regular;
+p.footer{
+  font-size: 24px;
+  line-height: 35px;
+}
+footer div {
+  padding: 32px;
+}
+.address{
+  padding-left: 219px;
+}
+.contact{
+  padding-right: 219px;
 }

@@ -14,7 +14,7 @@
     } */
     header {
         background-color: #4d7d36;
-        height: 32vh;
+        height: 135px;
         font-size: 18px;
         font-weight: regular;
         width: 100%;
@@ -30,15 +30,18 @@
         width: 90%;;
         margin: 0 auto;
     }
+    img.menu-icon{
+  display: none;
+    }
     div.logo{
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
-        margin: auto 27px;
     }
     .logo img {
-        height: 23vh;
+        height: 94px;
         width: auto;
+        margin: 0px 52px;
     }
     img.search{
         display: block;
@@ -54,20 +57,20 @@
         padding: 30px;
     } */
     h2.title{
-        font-size: 2.65vw;
+        font-size: 24px;
         font-weight: regular;
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
-        padding: 30px 0;
+        padding: 30px 0 23px 0;
         margin: 0px 6px;
     }
     nav ul li a {
-        font-size: 2.2vw;
+        font-size: 18px;
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-right: 2.6vw;
+        margin-right: 21px;
     }
 
     /* .search-container {
@@ -95,10 +98,11 @@
         display: flex;
         align-items: center;
         margin: 10px;
-        font-size: 1.7vw;
-        justify-content: space-around;
+        font-size: 20px;
+        justify-content: center;
         margin: 0px;
         padding: 24px 0;
+        gap: 180px;
     }
     p{
         font-size: 2.5vw;
@@ -121,9 +125,10 @@
     }
     .table-container{
         padding: 10px 0;
+        gap: 0px;
     }
     img.phone{
-        width: 7vw;
+        width: 55px;
     }
 
 
@@ -139,15 +144,16 @@
     }
 
     div.table-a {
-        width: 100%;
-        padding: 0;
+        width: 750px;
+        padding-left: 0;
+        margin-top: 20px;
 
     }
     th.product-title {
         font-weight: normal;
         background-color: white;
         padding-top: 10px 0;
-        font-size: 3vw;
+        font-size: 24px;
     }
 
     .table-1 {
@@ -156,7 +162,10 @@
 
     }
 
-
+    .total-price{
+        padding: 10px 0px;
+        text-align: left;
+    }
 
     
     /* .table-1 th:nth-child(3), */
@@ -169,25 +178,35 @@
     div.table-b {
         width: 100%;
         padding-left: 0;
-        margin-top: 20px;
+
     }
 
     .table-2 {
         margin-left: 0;
+
     }
+    .table-2 tr:first-child{
+        height: 56px;
+    }
+
 
     tbody {
         font-size: 2vw;
     }
 
     th{
-        font-size: 2.8vw;
-        font-weight: regular;
+        font-size: 24px;
+        font-weight: no;
     }
-    .table-a.td.product {
-        font-size: 2vw;
-        padding: px;
+    th.product-title1 {
+        text-align: left;
+        font-size: 24px;
+    }
+    .table-a td.product {
+        font-size: 20px;
+        padding: 0px;
         display: flex;
+        text-align: left;
     }
     td.product {
         display: flex;
@@ -195,7 +214,15 @@
         padding: 10px;
         font-size: 2.5vw;
       }
-
+    .table-1 td{
+        height: 95px;
+    }
+    .table-2 td{
+        height: 52px;
+    }
+    .count{
+        padding: 10px;
+    }
       
     /* .td{
         padding: 10px;
@@ -216,17 +243,17 @@
     }
     button.checkout-btn {
         width: 220px;
-        margin: 3vw auto;
+        margin: 41px 256px 33px 256px;
         font-size: 18px;
         display: block;
     }
 
     .backpage-btn {
-        width: 220px;
-        margin: 30px auto;
+        width: 214px;
+        margin: 38px 264px 0px 264px;
         font-size: 18px;
         display: block;
-        margin-bottom: 10px;
+        /* margin-bottom: 10px; */
     }
     td{
         padding: 10px;
@@ -241,17 +268,32 @@
         text-align: l;
         gap: 15px;
     }
-
-    p.footer-title {
-        font-size: 2.5vw;
-        margin-top: 10px;
-    }
-
-    p.footer {
-        font-size: 2.5vw;
-        padding-top: 8px;
-    }
     #about{
         display: none;
     }
+    .address{
+        margin: 0px;
+        padding: 0px;
+
+    }
+    .contact{
+        margin: 0px;
+        padding: 0px;
+    }
+    p.footer-title{
+        font-size: 16px;
+        margin: 0px;
+        line-height: 140%;
+    }
+    p.footer{
+        font-size: 15px;
+        padding: 0px;
+        line-height: 140%;
+    }
+    footer{
+        display: flex;
+        justify-content: center;
+        gap: 305px;
+    }
+
 }
