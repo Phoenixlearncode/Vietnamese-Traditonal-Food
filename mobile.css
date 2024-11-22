@@ -1,4 +1,4 @@
-@media(max-width: 413px) {
+@media(max-width: 633px) {
     * {
         margin: 0;
         padding: 0;
@@ -18,6 +18,7 @@
         font-size: 20px;
         font-weight: regular;
         width: 100%;
+        max-width: 691px;
         display: flex;
         justify-content: space-around;
         align-items: center;
@@ -25,6 +26,9 @@
 
     .big {
         width: 100%;
+    }
+    a{
+        display: none;
     }
 
     .small {
@@ -57,7 +61,8 @@
     }
 
     div.logo {
-        gap: 112px;
+        width: 100%;
+        max-width: 691px;
     }
 
     div.infor-container {
@@ -155,8 +160,10 @@
     }
 
     div.table-a {
-        width: 380px;
-        margin: 0;
+        width: 100%;
+        max-width: 691px;
+        min-width: 200px;
+        margin: 0 auto;
 
     }
 
@@ -172,8 +179,9 @@
     }
 
     .table-1 {
-        font-size: 18px;
-        margin-left: 0;
+        width: 100%;
+        max-width: 691px;
+        margin: 0;
     }
     table td:nth-child(2),
     table th:nth-child(2),
@@ -197,13 +205,18 @@
     }
 
     div.table-b {
-        width: 380px;
-        padding-left: 0;
+        width: 100%;
+        max-width: 691px;
+        padding-left: 10px;
         /* margin-top: 20px; */
     }
 
     .table-2 {
         margin-left: 0;
+    }
+    .table-2 td.price{
+        display: block;
+        height: 65px;
     }
 
     tbody {
@@ -214,9 +227,10 @@
         font-size: 16px;
     }
 
-    .table-a td.product, td.count {
+    .table-a td.count {
         font-size: 15px;
         height: 70px;
+        gap: 0px;
     }
     td.product p:last-child {
         display: block;
@@ -239,6 +253,9 @@
         font-size: 15px;
         height: 70px;
     }
+    td, th {
+        background: none !important; /* Loại bỏ nền */
+      }
 
     /* .td{
         padding: 10px;
@@ -258,18 +275,18 @@
         font-size: 2.3vw;
     }
 
-    button.checkout-btn {
+    /* button.checkout-btn {
         width: 160px;
         margin: 25px 110px 25px 110px;
         font-size: 18px;
         display: block;
-    }
-    .backpage-btn {
+    } */
+    /* .backpage-btn {
         width: 160px;
         margin: 25px 110px 0 110px;
         font-size: 18px;
         display: block;
-    }
+    } */
 
     td {
         padding: 10px;
